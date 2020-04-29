@@ -1,6 +1,12 @@
 ---
-title: Someone just pushed
+title: Revert {{ tools.context.payload.issue.title }}
 assignees: hiteshpachpor
-labels: bug, enhancement
+labels: hack
 ---
-Someone just pushed, oh no! Here's who did it: {{ payload.sender.login }}.
+Issue closed by: {{ payload.sender.login }}.
+
+Payload:
+
+```
+{{ tools.context.payload }}
+```

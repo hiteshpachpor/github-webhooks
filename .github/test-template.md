@@ -1,6 +1,6 @@
 ---
 title: Revert {{ payload.issue.title }}
-assignees: "{{ payload.sender.login }}"
+assignees: hiteshpachpor
 labels: revert-hack
 ---
 Issue closed by: {{ payload.sender.login }}.

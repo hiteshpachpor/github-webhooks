@@ -1,5 +1,5 @@
 ---
-title: Revert {{ tools.context.payload.issue.title }}
+title: Revert {{ payload.issue.title }}
 assignees: hiteshpachpor
 labels: hack
 ---
@@ -8,5 +8,5 @@ Issue closed by: {{ payload.sender.login }}.
 Payload:
 
 ```
-{{ tools.context.payload }}
+{{ payload }}
 ```

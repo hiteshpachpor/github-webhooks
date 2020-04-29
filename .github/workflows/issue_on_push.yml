@@ -1,4 +1,7 @@
-on: [push]
+on:
+  issues:
+    action:
+      opened
 name: Create an issue on push
 jobs:
   stuff:

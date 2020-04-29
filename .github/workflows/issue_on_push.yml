@@ -1,8 +1,9 @@
 on:
   issues:
-    action:
-      [opened, closed]
-name: Create an issue on push
+    action: closed
+    issue:
+      labels: [hack]
+name: Open a new issue to revert the hack
 jobs:
   stuff:
     runs-on: ubuntu-latest

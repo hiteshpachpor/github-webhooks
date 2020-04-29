@@ -1,7 +1,7 @@
 ---
 title: Revert {{ payload.issue.title }}
 assignees: >
-    {{ payload.sender.login }}
+    {{ payload.issue.assignee.login }}
 labels: revert-hack
 ---
 Issue closed by: {{ payload.sender.login }}.

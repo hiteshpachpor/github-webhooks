@@ -1,12 +1,11 @@
 ---
 title: Revert {{ payload.issue.title }}
-assignees: hiteshpachpor
-labels: hack
+assignees: {{ payload.issue.assignee.login }}
+labels: {{payload.issue.labels}}
 ---
 Issue closed by: {{ payload.sender.login }}.
+[Issue link]({{payload.issue.url}})
 
-Payload:
+--
 
-```
-{{ payload }}
-```
+{{payload.issue.body}}

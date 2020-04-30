@@ -4,7 +4,7 @@ assignees: hiteshpachpor
 labels: revert-hack
 ---
 - Tagged by: @{{ payload.sender.login }}.
-- [Link]({{payload.issue.url}})
+- [Link]({{payload.issue.html_url}})
 
 ---
 

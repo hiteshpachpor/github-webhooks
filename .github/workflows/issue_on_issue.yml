@@ -1,0 +1,15 @@
+on:
+  issues:
+    types: [labeled]
+name: Open a new issue to revert a hack
+jobs:
+  handle-issue:
+    if: github.event_name == 'issues'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          filename: .github/issue-template.md

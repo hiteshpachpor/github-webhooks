@@ -1,12 +1,10 @@
 on:
   issues:
-    types: [closed]
-    issue:
-      labels:
-        - hack
+    types: [labeled]
 name: Open a new issue to revert the hack
 jobs:
   stuff:
+    if: github.event.label.name == 'hack'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

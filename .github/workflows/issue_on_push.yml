@@ -1,8 +1,9 @@
 on:
   issues:
-    action: closed
+    types: [closed]
     issue:
-      labels: [hack]
+      labels:
+        - hack
 name: Open a new issue to revert the hack
 jobs:
   stuff:
